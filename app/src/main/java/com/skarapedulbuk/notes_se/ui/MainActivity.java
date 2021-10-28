@@ -1,8 +1,10 @@
-package com.skarapedulbuk.notes_se;
+package com.skarapedulbuk.notes_se.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.skarapedulbuk.notes_se.R;
 
 public class MainActivity extends AppCompatActivity {
 

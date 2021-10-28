@@ -10,17 +10,17 @@ public class NoteModel implements Parcelable {
     private final int noteName;
 
     @StringRes
-    private final int noteDescrioption;
+    private final int noteDescription;
 
 
-    public NoteModel(int noteName, int noteDescrioption) {
+    public NoteModel(int noteName, int noteDescription) {
         this.noteName = noteName;
-        this.noteDescrioption = noteDescrioption;
+        this.noteDescription = noteDescription;
     }
 
     protected NoteModel(Parcel in) {
         noteName = in.readInt();
-        noteDescrioption = in.readInt();
+        noteDescription = in.readInt();
     }
 
     public static final Creator<NoteModel> CREATOR = new Creator<NoteModel>() {
@@ -43,6 +43,6 @@ public class NoteModel implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(noteName);
-        dest.writeInt(noteDescrioption);
+        dest.writeInt(noteDescription);
     }
 }
